@@ -16,14 +16,11 @@ Environment Setup
 
 Clone this repository
 
-bash
 git clone https://github.com/yourusername/P-YOLOv11s.git
 
 cd P-YOLOv11s
 
 Install dependencies
-
-bash
 
 pip install -r requirements.txt
 
@@ -37,20 +34,14 @@ text
 
 datasets/
 
+datasets/
 ├── images/
-
 │   ├── train/      # Training images
-
 │   ├── val/        # Validation images
-
 │   └── test/       # Test images
-
 └── labels/
-
     ├── train/      # Training labels (YOLO format)
-
     ├── val/        # Validation labels
-
     └── test/       # Test labels
 
 Configuration File
@@ -65,7 +56,6 @@ We provide the official YOLOv11s pretrained weight yolov11s.pt to accelerate con
 
 Start Training
 
-bash
 
 python train.py --weights yolov11s.pt --cfg configs/pyolov11s.yaml --data data.yaml --epochs 200 --batch-size 16
 
@@ -96,8 +86,6 @@ These modules have been integrated into the backbone network and feature fusion 
 Inference and Evaluation
 
 After training, evaluate the model with:
-
-bash
 
 python val.py --weights runs/train/exp/weights/best.pt --data data.yaml --task test
 

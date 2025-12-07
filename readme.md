@@ -1,33 +1,67 @@
 🎯 Overview
+
+
 P-YOLOv11s is an enhanced framework specifically designed for peanut seedling detection in UAV remote sensing imagery. Building upon YOLOv11, the framework addresses field heterogeneity challenges arising from morphological variations (genotype, growth stage, planting density) and imaging variability (flight altitude, solar angle) through three key innovations:
+
 
 P2 Fine-grained Feature Layer: Enhances detection capability for small-sized seedlings, improving accuracy in early growth stages.
 
+
 Asymptotic Feature Pyramid Network (AFPN): Achieves more effective multi-scale feature fusion, adapting to seedling size variations across different growth stages and flight altitudes.
+
 
 Improved EMA Attention Mechanism (iEMA): Increases model robustness against inter-seedling occlusions, improving detection stability in dense planting conditions.
 
+
 The method was validated on a dataset encompassing significant agronomic diversity, including 1025 genotypes, different nitrogen treatments, multiple planting years, varying planting densities, and ecological zones. It covers multiple developmental stages from three-leaf to six-leaf and considers different flight altitudes (15, 25, 40 m) and four diurnal imaging intervals.
 
+
 🚀 Quick Start
+
+
 Environment Setup
+
+
 Clone this repository
 
-bash
-git clone https://github.com/yourusername/P-YOLOv11s.git
-cd P-YOLOv11s
-Install dependencies
 
 bash
+
+git clone https://github.com/yourusername/P-YOLOv11s.git
+
+
+cd P-YOLOv11s
+
+
+Install dependencies
+
+
+bash
+
+
 pip install -r requirements.txt
+
+
 Data Preparation
+
+
 Dataset Structure
+
+
 Place training, validation, and test set images in the following directory structure:
 
 text
+
+
 datasets/
+
+
 ├── images/
+
+
 │   ├── train/      # Training images
+
+
 │   ├── val/        # Validation images
 │   └── test/       # Test images
 └── labels/

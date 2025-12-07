@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # 训练模型
     model.train(data=r'data.yaml',   # 使用划分后的数据配置文件
                 imgsz=640,
-                epochs=300,
+                epochs=200,
                 batch=4,
                 workers=4,
                 device='0',

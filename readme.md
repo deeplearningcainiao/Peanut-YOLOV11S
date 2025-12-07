@@ -68,16 +68,6 @@ After training, evaluate the model with:
 
 python val.py --weights runs/train/exp/weights/best.pt --data data.yaml --task test
 
-📄 Code-Paper Correspondence
-
-Key technical components in this implementation correspond exactly to the manuscript:
-
-Architectural Improvements: The three modules in ultralytics/nn/Addmodules/ correspond to the core innovations in Section 3 of the paper.
-
-Training Configuration: Hyperparameter settings in train.py correspond to the experimental design in Section 4.1 of the paper.
-
-Experiment Reproduction: configs/pyolov11s.yaml contains complete configurations for all key experiments in the paper.
-
 📄 License
 
 This implementation is based on Ultralytics YOLO (AGPL-3.0). Use of this code is subject to the AGPL-3.0 license terms.

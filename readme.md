@@ -26,26 +26,6 @@ pip install -r requirements.txt
 
 Data Preparation
 
-Dataset Structure
-
-Place training, validation, and test set images in the following directory structure:
-
-text
-
-datasets/
-
-datasets/
-├── images/
-│   ├── train/      # Training images
-│   ├── val/        # Validation images
-│   └── test/       # Test images
-└── labels/
-    ├── train/      # Training labels (YOLO format)
-    ├── val/        # Validation labels
-    └── test/       # Test labels
-
-Configuration File
-
 Dataset paths are already configured in data.yaml, which correctly points to the above directory structure.
 
 Model Training
@@ -55,7 +35,6 @@ Use Pretrained Weights
 We provide the official YOLOv11s pretrained weight yolov11s.pt to accelerate convergence.
 
 Start Training
-
 
 python train.py --weights yolov11s.pt --cfg configs/pyolov11s.yaml --data data.yaml --epochs 200 --batch-size 16
 

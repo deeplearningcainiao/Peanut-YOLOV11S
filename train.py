@@ -23,10 +23,10 @@ if __name__ == '__main__':
                 single_cls=False,
                 cache=False)
     results = model.val(data=r'data.yaml', split='test',iou=0.5)
+    #print(f"Test metrics: {results}")
+  
     # 验证模型（可选）
     #metrics = model.val(data=r'data.yaml', split='val')  # 在验证集上评估
     #print(f"Validation metrics: {metrics}")
-    
-    # 测试模型
-      # 在测试集上评估
-    #print(f"Test metrics: {results}")
+
+

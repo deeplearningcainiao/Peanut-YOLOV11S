@@ -1,6 +1,6 @@
-train: E:\deeplearning\yolov5-11\yolov11s-AFPNHead-P2-iEMA\datasets\images\train # train images (relative to 'path') 4 images
-val: E:\deeplearning\yolov5-11\yolov11s-AFPNHead-P2-iEMA\datasets\images\val  # val images (relative to 'path') 4 images
-test: E:\deeplearning\yolov5-11\yolov11s-AFPNHead-P2-iEMA\images\test #test images (relative to 'path') 4 images
+train: datasets\images\train # train images (relative to 'path') 4 images
+val: datasets\images\val  # val images (relative to 'path') 4 images
+test: datasets\images\test #test images (relative to 'path') 4 images
 
 nc: 1
 

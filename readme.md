@@ -52,9 +52,7 @@ Parameter description:
 
 Innovative Modules
 
-In this study, the architecture incorporates three core enhancements. Two of these are custom modules—the Asymptotic Feature Pyramid Network (AFPN) and the Inverted Efficient Multi-scale Attention (iEMA) mechanism—implemented in the 
-
-AFPN.py and iEMA.py files located within the ultralytics/nn/Addmodules/ directory. Additionally, the model integrates the P2 fine-grained feature layer, which is natively implemented and directly adopted from the official Ultralytics 
+In this study, the architecture incorporates three core enhancements. Two of these are custom modules—the Asymptotic Feature Pyramid Network (AFPN) and the Inverted Efficient Multi-scale Attention (iEMA) mechanism—implemented in the AFPN.py and iEMA.py files located within the ultralytics/nn/Addmodules/ directory. Additionally, the model integrates the P2 fine-grained feature layer, which is natively implemented and directly adopted from the official Ultralytics 
 
 framework.
 
